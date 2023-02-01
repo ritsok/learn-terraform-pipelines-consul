@@ -1,3 +1,6 @@
+# Copyright (c) HashiCorp, Inc.
+# SPDX-License-Identifier: MPL-2.0
+
 variable "release_name" {
   type        = string
   description = "Helm Release name for Consul chart"

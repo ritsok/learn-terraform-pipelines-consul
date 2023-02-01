@@ -1,3 +1,6 @@
+# Copyright (c) HashiCorp, Inc.
+# SPDX-License-Identifier: MPL-2.0
+
 resource "helm_release" "consul" {
   count      = data.terraform_remote_state.cluster.outputs.enable_consul_and_vault ? 1 : 0
   depends_on = [kubernetes_namespace.secrets]
